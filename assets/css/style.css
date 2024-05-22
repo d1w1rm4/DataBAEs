@@ -126,12 +126,7 @@ a:focus {
   background-size: cover;
   position: relative;
   padding: 80px 0;
-}
-
-@media (min-width: 1024px) {
-  #top {
-    background-attachment: fixed;
-  }
+  background-attachment: fixed;
 }
 
 #top:before {
@@ -159,32 +154,27 @@ a:focus {
 
 #top h1 {
   margin: 30px 0 10px 0;
-  font-size: 48px;
+  font-size: 58px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  #top h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
 
 #top h2 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 24px;
+  text-align: justify;
 }
 
-@media (max-width: 768px) {
-  #top h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
+#top h3 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-align: right;
 }
 
 #top .btn-get-started {
@@ -229,4 +219,25 @@ section {
   text-align: center;
   padding-bottom: 40px;
   color: #999;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #343b40;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .credits {
+  text-align: center;
+}
+
+#footer .copyright {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
 }

@@ -33,6 +33,8 @@ a:focus {
 #header #logo img {
   padding: 0;
   margin: 0;
+  height: 30px;
+  width: 35px;
 }
 
 #header.header-transparent {
@@ -40,9 +42,10 @@ a:focus {
 }
 
 #header.header-scrolled {
-  background: rgba(52, 59, 64, 0.9);
-  height: 70px;
+  background: #343b40;
+  height: 60px;
   transition: all 0.5s;
+  box-shadow: 0 2px 4px #000;
 }
 
 .scrolled-offset {
@@ -79,7 +82,7 @@ a:focus {
   align-items: center;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f4f3f2;
   font-size: 14px;
   padding: 0 4px;
   white-space: nowrap;
@@ -96,7 +99,7 @@ a:focus {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #2dc997;
+  background-color: #f4f3f2;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -113,7 +116,32 @@ a:focus {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: #c78c06;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+  padding: 30px;
+  overflow: hidden;
+}
+
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+  font-size: 38px;
+  color: #343b40;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #999;
 }
 
 /*--------------------------------------------------------------
@@ -197,28 +225,190 @@ a:focus {
   border: 2px solid #c78c06;
 }
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-section {
+/* Overview Section
+--------------------------------*/
+#overview {
+  background: #f4f3f2;
+  padding: 80px 0;
+}
+
+#overview .about-container .background {
+  min-height: 300px;
+  background: url(../img/about-img.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+
+#overview .about-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #overview .about-container .title {
+    padding-top: 15px;
+  }
+}
+
+#overview .about-container p {
+  line-height: 26px;
+}
+
+#overview .about-container p:last-child {
+  margin-bottom: 0;
+}
+
+#overview .about-container .icon-box {
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#overview .about-container .icon-box .icon {
+  float: left;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #490C0C;
+}
+
+#overview .about-container .icon-box .icon i {
+  color: #490C0C;
+  font-size: 24px;
+  line-height: 0;
+}
+
+#overview .about-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#overview .about-container .icon-box .title a {
+  color: #111;
+}
+
+#overview .about-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/* Portfolio Section
+--------------------------------*/
+#portfolio {
+  padding: 80px 0;
+}
+
+#portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+
+#portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 18px 14px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #666666;
+  margin: 0 5px 10px 5px;
+  transition: all ease-in-out 0.3s;
+  background: white;
+  border-radius: 4px;
+}
+
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #490C0C;
+}
+
+#portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfolio .portfolio-item {
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
-/* Sections Header
---------------------------------*/
-.section-header .section-title {
-  font-size: 32px;
-  color: #111;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 5px;
+#portfolio .portfolio-item img {
+  position: relative;
+  top: 0;
+  transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.section-header .section-description {
-  text-align: center;
-  padding-bottom: 40px;
-  color: #999;
+#portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -50px;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: #490C0C;
+  padding: 15px 20px;
+}
+
+#portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#portfolio .portfolio-item .portfolio-info p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 0.85;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+#team {
+  background-color: #fff;
+  padding: 70px 0;
+}
+
+.member {
+  text-align: center; /* Center the content horizontally */
+  background-color: #f4f3f2; /* Set background color for each member */
+  border-radius: 10px; /* Add rounded corners for a nicer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+  margin-bottom: 20px;
+}
+
+.member-content {
+  text-align: justify;
+  padding: 20px;
+  margin: 10px;
+}
+
+.member .pic img {
+  width: 100%; /* Set width to 100% of container */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.social {
+  text-align: right;
 }
 
 /*--------------------------------------------------------------

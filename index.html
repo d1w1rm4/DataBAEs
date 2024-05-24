@@ -18,6 +18,8 @@
 		<!-- Helper CSS Files -->
 		<link href="assets/helper/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="assets/helper/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+		<link href="assets/helper/glightbox/css/glightbox.min.css" rel="stylesheet">
 
 		<!-- Main CSS stylesheet -->
 		<link href="assets/css/style.css" rel="stylesheet">
@@ -30,17 +32,17 @@
 			<div class="container d-flex justify-content-between align-items-center">
 		
 			  <div id="logo">
-				<a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+				<a href="index.html"><img src="assets/img/logo.png"></a>
 			  </div>
 			  
 			  <!-- ======= Navbar ======= -->
 			  <nav id="navbar" class="navbar">
 				<ul>
-				  <li><a class="nav-link scrollto active" href="#top">Home</a></li>
+				  <li><a class="nav-link scrollto" href="#top">Home</a></li>
 				  <li><a class="nav-link scrollto" href="#overview">Overview</a></li>
 				  <li><a class="nav-link scrollto" href="#data">Data</a></li>
-				  <li><a class="nav-link scrollto " href="#methods">Results</a></li>
-				  <li><a class="nav-link scrollto" href="#results">Methods</a></li>
+				  <li><a class="nav-link scrollto " href="#methods">Methods</a></li>
+				  <li><a class="nav-link scrollto" href="#results">Results</a></li>
 				  <li><a class="nav-link scrollto" href="#team">Team</a></li>
 				</ul>
 			  </nav><!-- End Navbar -->
@@ -53,46 +55,57 @@
 				<div class="container">
 					<h1>"When governance forsakes justice, unrest becomes the currency of the oppressed"</h1>
 					<h3>-DataBAEs, 2024</h3>
-					<br>
-					<h2>Our project, Analyzing Economic Indicators and Political Violence in the Philippines, applies Data Science concepts to real-world data within the theme 'Pilipinas in a Nutshell (PiNut) 2023'. We aim to leverage our acquired skills to gain insights and address practical challenges, aligning with Sustainable Development Goal (SDG) 16: Peace, Justice, and Strong Institutions. Through this, we contribute to societal betterment within the country.</h2>
 				</div>
 				<a href="#overview" class="btn-get-started">Know More</a>
 			</div>
 		</section><!-- End Top Section -->
 
 		<!-- Overview -->
-		<div id="overview">
+		<section id="overview">
 			<div class="container">
-				<header>
-					<h1>Overview</h1>
-				</header>
-				<div class="row aln-center">
-					<div class="col-4 col-6-medium col-12-small">
-						<section class="box style1">
-							<span class="icon featured fa-comments"></span>
-							<h3>Motivation</h3>
-							<p>The Philippines has long been riddled by persistent social issues such as poverty, unemployment, crime, and political violence, among others. Different administrations have attempted to resolve these issues through varying strategies and efforts. Economic indicators serve as crucial metrics for assessing the performance of government leaders in addressing the financial concerns and state of the country. Moreover, we believe that strengthening financial institutions would enhance the delivery of essential services to citizens, thereby alleviating hardships in areas such as healthcare, employment, and education. Consequently, this could mitigate the necessity for protests to advocate for these rights, leading to increased citizen satisfaction.</p>
-						</section>
-					</div>
-					<div class="col-4 col-6-medium col-12-small">
-						<section class="box style1">
-							<span class="icon solid featured fa-camera-retro"></span>
-							<h3>Problem</h3>
-							<p>Political violence in the Philippines is a multifaceted issue fueled by various social, economic, and political factors. 
-							Stemming from deep-seated social inequalities, dissatisfaction with government performance, and economic instability, 
-							it manifests as a means for marginalized communities to voice grievances and demand change. Economic hardship exacerbates 
-							tensions, while inadequate government services compound citizen dissatisfaction, creating unrest. Addressing these root causes 
-							necessitates comprehensive strategies that prioritize social justice, economic development, and good governance.</p>
-						</section>
-					</div>
-					<div class="col-4 col-6-medium col-12-small">
-						<section class="box style1">
-							<span class="icon featured fa-thumbs-up"></span>
-							<h3>Solution</h3>
-							<p>Utilizing data science techniques, we propose a solution that aims to identify correlations between economic indicators and political violence in the Philippines. By analyzing datasets of recorded political violence and economic indicators in the Philippines, we will uncover key factors influencing the occurrence of political violence and develop predictive models to anticipate its likelihood based on economic changes. These insights will empower policymakers to implement targeted interventions, fostering social stability and inclusive development.
+				<div class="row about-container">
+					<div class="col-lg-6 content order-lg-1 order-2">
+						<h2 class="title">Overview</h2>
+						<p>
+							Our project, <strong>Analyzing Economic Indicators and Political Violence in the Philippines</strong>, applies Data Science concepts to real-world data within the theme 'Pilipinas in a Nutshell (PiNut) 2023'.
+							We aim to leverage our acquired skills to gain insights and address practical challenges, aligning with <a href="https://sdgs.un.org/goals/goal16">Sustainable Development Goal (SDG) 16: Peace, Justice, and Strong Institutions</a>.
+							Through this, we contribute to societal betterment within the country.
+						</p>
+						<div class="icon-box">
+					  		<div class="icon"><i class="bi bi-briefcase"></i></div>
+					  		<h4 class="title"><a href="">Motivation</a></h4>
+					  		<p class="description">
+								The Philippines has long been riddled by persistent social issues such as poverty, unemployment, crime, and political violence, among others.
+								Different administrations have attempted to resolve these issues through varying strategies and efforts.
+								Economic indicators serve as crucial metrics for assessing the performance of government leaders in addressing the financial concerns and state of the country.
+								Moreover, we believe that strengthening financial institutions would enhance the delivery of essential services to citizens, thereby alleviating hardships in areas such as healthcare, employment, and education.
+								Consequently, this could mitigate the necessity for protests to advocate for these rights, leading to increased citizen satisfaction.
 							</p>
-						</section>
-					</div>
+						</div>
+		
+						<div class="icon-box">
+					  		<div class="icon"><i class="bi bi-card-checklist"></i></div>
+					  		<h4 class="title"><a href="">Problem</a></h4>
+					  		<p class="description">
+								Political violence in the Philippines is a multifaceted issue fueled by various social, economic, and political factors. 
+								Stemming from deep-seated social inequalities, dissatisfaction with government performance, and economic instability, 
+								it manifests as a means for marginalized communities to voice grievances and demand change. Economic hardship exacerbates 
+								tensions, while inadequate government services compound citizen dissatisfaction, creating unrest. Addressing these root causes 
+								necessitates comprehensive strategies that prioritize social justice, economic development, and good governance.
+							</p>
+						</div>
+		
+						<div class="icon-box">
+					  		<div class="icon"><i class="bi bi-binoculars"></i></div>
+					  		<h4 class="title"><a href="">Solution</a></h4>
+							<p class="description">
+								Utilizing data science techniques, we propose a solution that aims to identify correlations between economic indicators and political violence in the Philippines.
+								By analyzing datasets of recorded political violence and economic indicators in the Philippines, we will uncover key factors influencing the occurrence of political violence and develop predictive models to anticipate its likelihood based on economic changes.
+								These insights will empower policymakers to implement targeted interventions, fostering social stability and inclusive development.
+							</p>
+						</div>
+				  	</div>
+				 	<div class="col-lg-6 background order-lg-2 order-1"></div>
 				</div>
 			</div>
 
@@ -102,9 +115,9 @@
 					<header>
 						<h1>Background Study</h1>
 					</header>
-					<section>
+					<span>
 						<p>Carothers and Feldman (2022) illuminated the global landscape of protests, with a particular focus on the pervasive influence of economic grievances as drivers of social unrest. The widespread surge in protests driven by rising citizen anger over economic problems, notably surging inflation, has led to an increase in antigovernment demonstrations worldwide. They also emphasized that while economic protests were prevalent across various regions, they often manifested under different banners, such as labor unions or political parties, advocating for greater government intervention to address underlying economic challenges. Furthermore, they note the short-lived nature of many economic protests, suggesting a lack of clear solutions and the complexity of economic disruptions.</p>
-					</section>
+					</span>
 					<footer>
 						<p>For more information, refer to <a href="https://carnegieendowment.org/2022/12/08/economic-anger-dominated-global-protests-in-2022-pub-88587">Economic Anger Dominated Global Protests in 2022</a>.</p>
 					</footer>
@@ -140,18 +153,18 @@
 					<header>
 						<h2>Research Hypothesis</h2>
 					</header>
-					<section>
+					<span>
 						<h3>Null Hypothesis (H0)</h3>
 						<p>None of the Philippines' economic indicators are correlated with the number of recorded political violence in the country.</p>
 						<h3>Alternative Hypothesis (H1)</h3>
 						<p>At least one Philippine economic indicator is correlated with the number of recorded political violence in the country.</p>
-					</section>
+					</span>
 				</div>
 			</article>
-		</div>
+		</section>
 
 		<!-- Data -->
-		<article id="data" class="wrapper style3">
+		<section id="data">
 			<div class="container">
 				<header>
 					<h1>Data</h1>
@@ -162,62 +175,228 @@
 				<p>The dataset includes political violence in the Philippines from 2016 up to the present, which
 					amounts. Each data point records pertinent information on
 					the nature of the political violence: date, time, location, fatalities, and many more.
-					</p>
+				</p>
 				<footer>
 					<a href="https://docs.google.com/spreadsheets/d/1rBqIcvlR24GaPRls6MEQ8wJtsadiVIxgc5bVuSwaH-I/edit?usp=sharing" target="_blank">View our dataset</a>
 				</footer>
 			</div>
-		</article>
+			<section id="portfolio">
+				<div class="container">
+					<div class="section-header">
+						<h3 class="section-title">Plots</h3>
+						<p class="section-description">Exploratory Data Analysis</p>
+					  </div>
+		  
+					  <div class="row">
+						<div class="col-lg-12 d-flex justify-content-center">
+							  <ul id="portfolio-flters">
+								<li data-filter="*" class="filter-active">All</li>
+								<li data-filter=".filter-nutshell">Nutshell</li>
+								<li data-filter=".filter-r1">First</li>
+								<li data-filter=".filter-r2">Second</li>
+							  </ul>
+						</div>
+					  </div>
+		  
+					  <div class="row portfolio-container">
+		  
+						<div class="col-lg-4 col-md-6 portfolio-item filter-nutshell">
+							<img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>Nutshell</h4>
+								<p>This graph summarizes the our data</p>
+								<a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+		  
+						<div class="col-lg-4 col-md-6 portfolio-item filter-r1">
+							<img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>R1</h4>
+								<p>r1</p>
+								<a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+		  
+						<div class="col-lg-4 col-md-6 portfolio-item filter-r1">
+							<img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>R1</h4>
+								<p>r1</p>
+								<a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+		  
+						<div class="col-lg-4 col-md-6 portfolio-item filter-r2">
+							<img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>R2</h4>
+								<p>r2</p>
+								<a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+		  
+						<div class="col-lg-4 col-md-6 portfolio-item filter-r1">
+							<img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>R1</h4>
+								<p>r2</p>
+								<a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+			
+						<div class="col-lg-4 col-md-6 portfolio-item filter-r1">
+							<img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>R1</h4>
+								<p>r1</p>
+								<a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+			
+						<div class="col-lg-4 col-md-6 portfolio-item filter-r2">
+							<img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>R2</h4>
+								<p>r2</p>
+								<a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+			
+						<div class="col-lg-4 col-md-6 portfolio-item filter-r2">
+							<img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>R2</h4>
+								<p>r2</p>
+								<a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+			
+						<div class="col-lg-4 col-md-6 portfolio-item filter-r1">
+							<img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" >
+							<div class="portfolio-info">
+								<h4>R1</h4>
+								<p>r1</p>
+								<a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><!-- End Plots Section -->
+		</section><!-- End Data Section -->
 
-		<!-- Team -->
+		<!-- Methods -->
+		<section id="methods">
+			<div class="container">
+				<header>
+					<h1>Methods</h1>
+					<h4>We looked at publicly available and credible databanks.</h4>
+					<p>Specifically, we looked at ACLED by using their <a href="https://acleddata.com/data-export-tool/" target="_blank">data export tool</a>,
+						and we looked at World Bank's data catalog labeled as <a href="https://datacatalog.worldbank.org/search/dataset/0037798/Global-Economic-Monitor" target="_blank">Global Economic Monitor.</a></p>
+				</header>
+				<p>The dataset includes political violence in the Philippines from 2016 up to the present, which
+					amounts. Each data point records pertinent information on
+					the nature of the political violence: date, time, location, fatalities, and many more.
+				</p>
+				<footer>
+					<a href="https://docs.google.com/spreadsheets/d/1rBqIcvlR24GaPRls6MEQ8wJtsadiVIxgc5bVuSwaH-I/edit?usp=sharing" target="_blank">View our dataset</a>
+				</footer>
+			</div>
+		</section> <!-- End Methods Section -->
+
+		<!-- Results -->
+		<section id="results">
+			<div class="container">
+				<header>
+					<h1>Results</h1>
+					<h4>We looked at publicly available and credible databanks.</h4>
+					<p>Specifically, we looked at ACLED by using their <a href="https://acleddata.com/data-export-tool/" target="_blank">data export tool</a>,
+						and we looked at World Bank's data catalog labeled as <a href="https://datacatalog.worldbank.org/search/dataset/0037798/Global-Economic-Monitor" target="_blank">Global Economic Monitor.</a></p>
+				</header>
+				<p>The dataset includes political violence in the Philippines from 2016 up to the present, which
+					amounts. Each data point records pertinent information on
+					the nature of the political violence: date, time, location, fatalities, and many more.
+				</p>
+				<footer>
+					<a href="https://docs.google.com/spreadsheets/d/1rBqIcvlR24GaPRls6MEQ8wJtsadiVIxgc5bVuSwaH-I/edit?usp=sharing" target="_blank">View our dataset</a>
+				</footer>
+			</div>
+		</section> <!-- End Results Section -->
+		
+		<!-- DataBAEs -->
 		<section id="team">
 			<div class="container">
 				<div class="section-header">
 					<h2 class="section-title">DataBAEs</h2>
-					<p class="section-description">aaaaaaaaaaaaaa</p>
+					<p class="section-description">Get to know our team.</p>
 				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
+				<div class="row justify-content-center"> <!-- Center the row -->
+					<div class="col-lg-4 col-md-6"> <!-- Adjust column classes here -->
 						<div class="member">
-							<div class="pic"><img src="assets/img/team-1.jpg" alt="">
-							</div>
-							<h4>Brylle Joshua Logrono</h4>
-							<span></span>
-							<div class="social">
-								<a href=""><i class="bi bi-twitter"></i></a>
-								<a href=""><i class="bi bi-facebook"></i></a>
-								<a href=""><i class="bi bi-instagram"></i></a>
-								<a href=""><i class="bi bi-linkedin"></i></a>
+							<div class="pic"><img src="assets/img/team-1.jpg" ></div>
+								<h4>Brylle Joshua Logrono</h4>
+								<div class="member-content">
+								<span>
+									<p>
+										Brylle is a 4th year BS Computer Science major in the University of the Philippines Diliman.
+										He is a member of the UP Center for Student Innovations Organization and is currently perforing his thesis
+										under the Department of Computer Science - Alogrithms and Complexity Laboratory.
+										While the whole team works toegther for this project in every aspect, Brylle is mainly responsible for the website content.
+									</p>
+								</span>
+								<div class="social">
+									<a href="https://www.linkedin.com/in/brylle-joshua-logroño-b68ab6263/"><i class="bi bi-linkedin"></i></a>
+									<a href=""><i class="bi bi-github"></i></a>
+									<a href="https://x.com/bruh_yl"><i class="bi bi-twitter"></i></a>
+									<a href="https://www.facebook.com/bryllejoshua.logrono/"><i class="bi bi-facebook"></i></a>
+									<a href="https://www.instagram.com/bruh._.yl/"><i class="bi bi-instagram"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
-		
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-4 col-md-6"> <!-- Adjust column classes here -->
 						<div class="member">
-							<div class="pic"><img src="assets/img/team-2.jpg" alt="">
-							</div>
-							<h4>Aaron Jude Tanael</h4>
-							<span></span>
-							<div class="social">
-								<a href=""><i class="bi bi-twitter"></i></a>
-								<a href=""><i class="bi bi-facebook"></i></a>
-								<a href=""><i class="bi bi-instagram"></i></a>
-								<a href=""><i class="bi bi-linkedin"></i></a>
+							<div class="pic"><img src="assets/img/team-2.jpg" ></div>
+								<h4>Aaron Jude Tanael</h4>
+								<div class="member-content">
+								<span>
+									<p>
+										Aaron is a 4th year BS Computer Science major in the University of the Philippines Diliman.
+										He is a member of the UP Center for Student Innovations Organization and is currently perforing his thesis
+										under the Department of Computer Science - Alogrithms and Complexity Laboratory.
+										While the whole team works toegther for this project in every aspect, Aaron is mainly responsible for the data handling.
+									</p>
+								</span>
+								<div class="social">
+									<a href="https://www.linkedin.com/in/eywantheone/"><i class="bi bi-linkedin"></i></a>
+									<a href="https://github.com/eyronjuude"><i class="bi bi-github"></i></a>
+									<a href=""><i class="bi bi-twitter"></i></a>
+									<a href="https://www.facebook.com/eyron.10"><i class="bi bi-facebook"></i></a>
+									<a href="https://www.instagram.com/eywantheone/"><i class="bi bi-instagram"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
-		
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-4 col-md-6"> <!-- Adjust column classes here -->
 						<div class="member">
-							<div class="pic"><img src="assets/img/team-3.jpg" alt="">
-							</div>
-							<h4>Earl Wilbur Nogra</h4>
-							<span></span>
-							<div class="social">
-								<a href=""><i class="bi bi-twitter"></i></a>
-								<a href=""><i class="bi bi-facebook"></i></a>
-								<a href=""><i class="bi bi-instagram"></i></a>
-								<a href=""><i class="bi bi-linkedin"></i></a>
+							<div class="pic"><img src="assets/img/team-3.jpg" ></div>
+								<h4>Earl Wilbur Nogra</h4>
+								<div class="member-content">
+								<span>
+									<p>
+										Earl is a 4th year BS Computer Science major in the University of the Philippines Diliman.
+										He is a member of the UP Beta Epsilon Fraternity and is currently perforing his thesis
+										under the Department of Computer Science - Alogrithms and Complexity Laboratory.
+										While the whole team works toegther for this project in every aspect, Earl is mainly responsible for the website development.
+									</p>
+								</span>
+								<div class="social">
+									<a href="https://www.linkedin.com/in/earl-wilbur-nogra-6b39112a9/"><i class="bi bi-linkedin"></i></a>
+									<a href="https://github.com/Necrodius"><i class="bi bi-github"></i></a>
+									<a href=""><i class="bi bi-twitter"></i></a>
+									<a href="https://www.facebook.com/ewanogra/"><i class="bi bi-facebook"></i></a>
+									<a href=""><i class="bi bi-instagram"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -239,6 +418,8 @@
 		
 		<!-- Helper JS Files -->
 		<script src="assets/helper/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/helper/glightbox/js/glightbox.min.js"></script>
+		<script src="assets/helper/isotope-layout/isotope.pkgd.min.js"></script>
 
 		<!-- Main JS File -->
 		<script src="assets/js/main.js"></script>

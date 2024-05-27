@@ -166,107 +166,179 @@
 				<footer>
 					<a href="https://docs.google.com/spreadsheets/d/1rBqIcvlR24GaPRls6MEQ8wJtsadiVIxgc5bVuSwaH-I/edit?usp=sharing" target="_blank">View our dataset</a>
 				</footer>
-			</div>
-			<section id="plots">
-				<div class="container">
+
+				<section id="plots">
 					<div class="section-header">
 						<h3 class="section-title">Plots</h3>
 						<p class="section-description">Exploratory Data Analysis</p>
-					  </div>
+					</div>
 		  
-					  <div class="row">
+					<div class="row">
 						<div class="col-12 d-flex justify-content-center">
 							  <ul id="plots-flters">
 								<li data-filter="*" class="filter-active">All</li>
 								<li data-filter=".filter-nutshell">Nutshell</li>
-								<li data-filter=".filter-r1">First</li>
-								<li data-filter=".filter-r2">Second</li>
+								<li data-filter=".filter-corr">Correlation</li>
+								<li data-filter=".filter-2">Second</li>
 							  </ul>
 						</div>
-					  </div>
+					</div>
 		  
-					  <div class="row plots-container">
+					<div class="row plots-container">
 		  
-						<div class="col-4 plots-item filter-nutshell">
-							<img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" >
+						<div class="col-12 plots-item filter-nutshell">
+							<img src="" class="img-fluid" >
 							<div class="plots-info">
 								<h4>Nutshell</h4>
 								<p>This graph summarizes the our data</p>
-								<a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
+								<a href="" data-gallery="plotsGallery" class="plots-lightbox"></a>
 							</div>
 						</div>
 		  
-						<div class="col-4 plots-item filter-r1">
-							<img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" >
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/CPI%20Price,%20nominal,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
 							<div class="plots-info">
-								<h4>R1</h4>
-								<p>r1</p>
-								<a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
+								<h4>CPI Price, nominal, seas. adj. time-lag cross-correlation matrix</h4>
+								<p>The correlation between CPI price and time-lag.</p>
+								<a href="assets/img/plots/CPI%20Price,%20nominal,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Official%20exchange%20rate,%20LCU%20per%20USD,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Official exchange rate, LCU per USD, period average time-lag cross-correlation matrix</h4>
+								<p>The correlation between official exchange rate and time-lag.</p>
+								<a href="assets/img/plots/Official%20exchange%20rate,%20LCU%20per%20USD,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Exports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Exports Merchandise, Customs, Price, US$, seas. adj. time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Exports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
 							</div>
 						</div>
 		  
-						<div class="col-4 plots-item filter-r1">
-							<img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" >
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Exchange%20rate,%20new%20LCU%20per%20USD%20extended%20backward,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
 							<div class="plots-info">
-								<h4>R1</h4>
-								<p>r1</p>
-								<a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
+								<h4>Exchange rate, new LCU per USD extended backward, period average time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Exchange%20rate,%20new%20LCU%20per%20USD%20extended%20backward,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
 							</div>
 						</div>
-		  
-						<div class="col-4 plots-item filter-r2">
-							<img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" >
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Foreign%20Reserves,%20Months%20Import%20Cover,%20Goods%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
 							<div class="plots-info">
-								<h4>R2</h4>
-								<p>r2</p>
-								<a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
-							</div>
-						</div>
-		  
-						<div class="col-4 plots-item filter-r1">
-							<img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>R1</h4>
-								<p>r2</p>
-								<a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
+								<h4>Foreign Reserves, Months Import Cover, Goods time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Foreign%20Reserves,%20Months%20Import%20Cover,%20Goods%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
 							</div>
 						</div>
 			
-						<div class="col-4 plots-item filter-r1">
-							<img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" >
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/GDP%20at%20market%20prices,%20current%20LCU,%20millions,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
 							<div class="plots-info">
-								<h4>R1</h4>
-								<p>r1</p>
-								<a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
+								<h4>GDP at market prices, current LCU, millions, seas. adj. time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/GDP%20at%20market%20prices,%20current%20LCU,%20millions,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
 							</div>
 						</div>
 			
-						<div class="col-4 plots-item filter-r2">
-							<img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" >
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Imports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
 							<div class="plots-info">
-								<h4>R2</h4>
-								<p>r2</p>
-								<a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
+								<h4>Imports Merchandise, Customs, Price, US$, seas. adj. time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Imports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
 							</div>
 						</div>
 			
-						<div class="col-4 plots-item filter-r2">
-							<img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" >
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Industrial%20Production,%20constant%202010%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
 							<div class="plots-info">
-								<h4>R2</h4>
-								<p>r2</p>
-								<a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
+								<h4>Industrial Production, constant 2010 US$, seas. adj. time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Industrial%20Production,%20constant%202010%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
 							</div>
 						</div>
 			
-						<div class="col-4 plots-item filter-r1">
-							<img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" >
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Nominal%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
 							<div class="plots-info">
-								<h4>R1</h4>
-								<p>r1</p>
-								<a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="plotsGallery" class="plots-lightbox preview-link"></a>
+								<h4>Nominal Effective Exchange Rate time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Nominal%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
 							</div>
 						</div>
+						
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Real%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Real Effective Exchange Rate time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Real%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Normalized%20CPI%20Price,%20nominal,%20seas.%20adj.%20from%20past%2011%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%203%20months%20vs.%20time%20line%20graph.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Normalized CPI Price, nominal, seas. adj. from past 11 months and Amount of Political Violence Incidents from past 3 months vs. time line graph</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Normalized%20CPI%20Price,%20nominal,%20seas.%20adj.%20from%20past%2011%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%203%20months%20vs.%20time%20line%20graph.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Normalized%20Terms%20of%20Trade%20from%20past%202%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%205%20months%20vs.%20time%20line%20graph.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Normalized Terms of Trade from past 2 months and Amount of Political Violence Incidents from past 5 months vs. time line graph</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Normalized%20Terms%20of%20Trade%20from%20past%202%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%205%20months%20vs.%20time%20line%20graph.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Stock%20Markets,%20LCU%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Stock Markets, LCU time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Stock%20Markets,%20LCU%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Terms%20of%20Trade%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Terms of Trade time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Terms%20of%20Trade%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Total%20Reserves%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Total Reserves time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Total%20Reserves%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
+						<div class="col-6 plots-item filter-corr">
+							<img src="assets/img/plots/Unemployment%20Rate,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+							<div class="plots-info">
+								<h4>Unemployment Rate, seas. adj. time-lag cross-correlation matrix</h4>
+								<p>desc</p>
+								<a href="assets/img/plots/Unemployment%20Rate,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</section><!-- End Plots Section -->

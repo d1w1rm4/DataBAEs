@@ -92,23 +92,23 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
+    let plotsContainer = select('.plots-container');
+    if (plotsContainer) {
+      let plotsIsotope = new Isotope(plotsContainer, {
+        itemSelector: '.plots-item',
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let plotsFilters = select('#plots-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#plots-flters li', function(e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        plotsFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
+        plotsIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
 
@@ -118,16 +118,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate plots lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+  const plotsLightbox = GLightbox({
+    selector: '.plots-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * plots details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.plots-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {

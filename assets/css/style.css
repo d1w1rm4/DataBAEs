@@ -386,3 +386,7 @@ section {
   font-size: 13px;
   color: #ccc;
 }
+
+p {
+  text-align: justify;
+}

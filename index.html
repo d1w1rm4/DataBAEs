@@ -708,6 +708,37 @@
 				</div>
 			</div>
 		</section><!-- End Plots Section -->
+        
+        <section id="machine learning">
+			<div class="container">
+				<header>
+					<h1>Machine Learning</h1>
+					<p> Machine learning played a pivotal role in our study, where we trained a supervised model to forecast the number of political 
+                        violence incidents based on economic indicators such as CPI, GDP, and Real Effective Exchange Rate. We explored various regression
+                        models including Random Forest, Gradient Boosting, Neural Network, Ridge, Linear, and Support Vector. Utilizing GridSearchCV, we 
+                        fine-tuned these models' hyperparameters to enhance their performance.
+					</p>
+					<p>
+						Among these, the Random Forest Regression model delivered the most promising results, boasting a Mean Squared Error (MSE) of 1760.41
+                        and an R-squared of 0.70. MSE quantifies the average squared difference between predicted and actual values, providing a clear measure
+                        of prediction accuracy. Meanwhile, R-squared indicates how well the model fits the data, with higher values signifying a better fit. 
+                        The optimal parameters identified for the Random Forest model were: 'bootstrap': False, 'max_depth': 10, 'max_features': 'sqrt', 
+                        'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50.
+					</p>
+                    <p>
+                        A Random Forest Regressor functions by constructing multiple decision trees, each trained on different subsets of the data and features.
+                        These trees collectively predict outcomes, and the final prediction is an average of their individual forecasts. This ensemble method 
+                        mitigates overfitting and enhances robustness by leveraging the diverse insights from multiple trees, thereby offering more accurate 
+                        and reliable predictions than individual decision trees alone.
+                    </p>
+                    <p>
+                        To evaluate our model's effectiveness, we divided the dataset into training (80%) and test (20%) sets. With the trained Random Forest model,
+                        we successfully predicted the incidence of political violence incidents based on economic factors. The accompanying plot illustrates the model's
+                        performance against the test set, demonstrating its predictive capability.
+                    </p>
+				</header>
+			</div>
+		</section>
 
 		<section id="conclusions">
 			<div class="container">

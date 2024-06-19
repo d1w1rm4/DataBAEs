@@ -39,8 +39,8 @@
 				<ul>
 				  <li><a class="nav-link scrollto" href="#top">Home</a></li>
 				  <li><a class="nav-link scrollto" href="#overview">Overview</a></li>
-				  <li><a class="nav-link scrollto" href="#data">Data</a></li>
-				  <li><a class="nav-link scrollto " href="#methods">Methods</a></li>
+				  <li><a class="nav-link scrollto" href="#methods">Methods</a></li>
+				  <li><a class="nav-link scrollto" href="#plots">Plots</a></li>
 				  <li><a class="nav-link scrollto" href="#results">Results</a></li>
 				  <li><a class="nav-link scrollto" href="#team">Team</a></li>
 				</ul>
@@ -63,7 +63,7 @@
 		<section id="overview">
 			<div class="container">
 				<div class="title-container">
-					<h2 class="title">Overview</h2>
+					<h1 class="title">Overview</h1>
 					<p>
                         Welcome to our project, <strong style="color: #490C0C;">Analyzing Economic Indicators and Political Violence in the Philippines</strong>, part of the dynamic initiative "PiNut 2023: Pilipinas in a Nutshell." 
                         Through the application of Data Science concepts to real-world data, we are committed to extracting actionable insights and addressing significant challenges. 
@@ -106,7 +106,7 @@
 				<!-- Background Study -->
 				<article id="background" class="wrapper style2">
 					<header>
-						<h1>Background Study</h1>
+						<h2>Background Study</h1>
 					</header>
 					<span>
                         <p>Our project employs advanced data science techniques to explore the relationship between economic indicators and political violence in the Philippines. 
@@ -155,212 +155,237 @@
 			</div>
 		</section>
 
-		<!-- Data -->
-		<section id="data">
-			<div class="container">
-				<header>
-					<h1>Data</h1>
-					<h4>We looked at publicly available and credible databanks.</h4>
-					<p>Specifically, we looked at ACLED by using their <a href="https://acleddata.com/data-export-tool/" target="_blank">data export tool</a>,
-						and we looked at World Bank's data catalog labeled as <a href="https://datacatalog.worldbank.org/search/dataset/0037798/Global-Economic-Monitor" target="_blank">Global Economic Monitor.</a></p>
-				</header>
-				<p>The dataset includes political violence in the Philippines from 2016 up to the present, which
-					amounts. Each data point records pertinent information on
-					the nature of the political violence: date, time, location, fatalities, and many more.
-				</p>
-				<footer>
-					<a href="https://docs.google.com/spreadsheets/d/1rBqIcvlR24GaPRls6MEQ8wJtsadiVIxgc5bVuSwaH-I/edit?usp=sharing" target="_blank">View our dataset</a>
-				</footer>
-
-				<section id="plots">
-					<div class="section-header">
-						<h3 class="section-title">Plots</h3>
-						<p class="section-description">Exploratory Data Analysis</p>
-					</div>
-		  
-					<div class="row">
-						<div class="col-12 d-flex justify-content-center">
-							  <ul id="plots-flters">
-								<li data-filter="*" class="filter-active">All</li>
-								<li data-filter=".filter-nutshell">Nutshell Plot</li>
-								<li data-filter=".filter-max">Plots With Highest Positive and Negative Correlations</li>
-								<li data-filter=".filter-corr">Correlation Matrices</li>
-							  </ul>
-						</div>
-					</div>
-		  
-					<div class="row plots-container">
-		  
-						<div class="col-12 plots-item filter-nutshell">
-							<img src="assets\img\plots\Nutshell.png" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Nutshell</h4>
-								<p>This graph represents the relationship between the reported political violence incidents and the Consumer Price Index (CPI) economic factor. It is shown in the graph that as the CPI trend increases, the number of reported political violence incidents decreases, which shows that there is an inverse relationship between the two variables.</p>
-								<a href="assets\img\plots\Nutshell.png" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-		  
-						<div class="col-6 plots-item filter-max">
-							<img src="assets/img/plots/Normalized%20CPI%20Price,%20nominal,%20seas.%20adj.%20from%20past%2011%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%203%20months%20vs.%20time%20line%20graph.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Normalized time series graph between Normalized CPI Price, nominal, seas. adj. and Amount of Political Violence Incidents</h4>
-								<p>The normalized time series plot between CPI price and number of recorded political violence indicents with time-lag. This graph shows the correlation of the economic factor with highest negative correlation to the number of recorded political violence indicents.</p>
-								<a href="assets/img/plots/Normalized%20CPI%20Price,%20nominal,%20seas.%20adj.%20from%20past%2011%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%203%20months%20vs.%20time%20line%20graph.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-max">
-							<img src="assets/img/plots/Normalized%20Terms%20of%20Trade%20from%20past%202%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%205%20months%20vs.%20time%20line%20graph.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Normalized time series graph between Terms of Trade and Amount of Political Violence Incidents</h4>
-								<p>The normalized time series plot between terms of trade and number of recorded political violence indicents with time-lag. This graph shows the correlation of the economic factor with highest negative correlation to the number of recorded political violence indicents.</p>
-								<a href="assets/img/plots/Normalized%20Terms%20of%20Trade%20from%20past%202%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%205%20months%20vs.%20time%20line%20graph.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/CPI%20Price,%20nominal,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>CPI Price, nominal, seas. adj. time-lag cross-correlation matrix</h4>
-								<p>The correlation between CPI price and time-lag.</p>
-								<a href="assets/img/plots/CPI%20Price,%20nominal,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Official%20exchange%20rate,%20LCU%20per%20USD,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Official exchange rate, LCU per USD, period average time-lag cross-correlation matrix</h4>
-								<p>The correlation between official exchange rate and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Official%20exchange%20rate,%20LCU%20per%20USD,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Exports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Exports Merchandise, Customs, Price, US$, seas. adj. time-lag cross-correlation matrix</h4>
-								<p>The correlation between exports merchandise and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Exports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-		  
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Exchange%20rate,%20new%20LCU%20per%20USD%20extended%20backward,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Exchange rate, new LCU per USD extended backward, period average time-lag cross-correlation matrix</h4>
-								<p>The correlation between exchange rate and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Exchange%20rate,%20new%20LCU%20per%20USD%20extended%20backward,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Foreign%20Reserves,%20Months%20Import%20Cover,%20Goods%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Foreign Reserves, Months Import Cover, Goods time-lag cross-correlation matrix</h4>
-								<p>The correlation between foreign reserves and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Foreign%20Reserves,%20Months%20Import%20Cover,%20Goods%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-			
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/GDP%20at%20market%20prices,%20current%20LCU,%20millions,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>GDP at market prices, current LCU, millions, seas. adj. time-lag cross-correlation matrix</h4>
-								<p>The correlation between GDP at market prices and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/GDP%20at%20market%20prices,%20current%20LCU,%20millions,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-			
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Imports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Imports Merchandise, Customs, Price, US$, seas. adj. time-lag cross-correlation matrix</h4>
-								<p>The correlation between imports merchandise and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Imports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-			
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Industrial%20Production,%20constant%202010%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Industrial Production, constant 2010 US$, seas. adj. time-lag cross-correlation matrix</h4>
-								<p>The correlation between industrial production and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Industrial%20Production,%20constant%202010%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-			
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Nominal%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Nominal Effective Exchange Rate time-lag cross-correlation matrix</h4>
-								<p>The correlation between nominal effective exchange rate and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Nominal%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-						
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Real%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Real Effective Exchange Rate time-lag cross-correlation matrix</h4>
-								<p>The correlation between real effective exchange rate and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Real%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Stock%20Markets,%20LCU%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Stock Markets, LCU time-lag cross-correlation matrix</h4>
-								<p>The correlation between stock markets and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Stock%20Markets,%20LCU%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Terms%20of%20Trade%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Terms of Trade time-lag cross-correlation matrix</h4>
-								<p>The correlation between terms of trade and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Terms%20of%20Trade%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Total%20Reserves%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Total Reserves time-lag cross-correlation matrix</h4>
-								<p>The correlation between total reserves and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Total%20Reserves%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-						<div class="col-6 plots-item filter-corr">
-							<img src="assets/img/plots/Unemployment%20Rate,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
-							<div class="plots-info">
-								<h4>Unemployment Rate, seas. adj. time-lag cross-correlation matrix</h4>
-								<p>The correlation between unemployment rate and number of recorded political violence indicents with time-lag.</p>
-								<a href="assets/img/plots/Unemployment%20Rate,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
-							</div>
-						</div>
-
-
-					</div>
-				</div>
-			</section><!-- End Plots Section -->
-		</section><!-- End Data Section -->
-
 		<!-- Methods -->
 		<section id="methods">
 			<div class="container">
 				<header>
 					<h1>Methods</h1>
-					<h4>methods</h4>
+					<p>After formulating our research questions and hypotheses, we have done the following methodology phases to come up with the analysis and potential workarounds for the data obtained regarding the economic factors and amount of political violence indicents.</p>
 				</header>
+				<div class="row justify-content-center msp-container">
+					<div class="about-box col-4">
+						<header>
+							<h3 style="text-align: center;">Data Collection</h3>
+							<h4>We looked at publicly available and credible databanks.</h4>
+							<p>Specifically, we looked at ACLED by using their <a href="https://acleddata.com/data-export-tool/" target="_blank">data export tool</a>,
+								and we looked at World Bank's data catalog labeled as <a href="https://datacatalog.worldbank.org/search/dataset/0037798/Global-Economic-Monitor" target="_blank">Global Economic Monitor.</a></p>
+						</header>
+						<p>The dataset includes political violence in the Philippines from 2016 up to the present, which
+							amounts. Each data point records pertinent information on
+							the nature of the political violence: date, time, location, fatalities, and many more.
+						</p>
+						<footer>
+							<a href="https://docs.google.com/spreadsheets/d/1rBqIcvlR24GaPRls6MEQ8wJtsadiVIxgc5bVuSwaH-I/edit?usp=sharing" target="_blank">View our dataset</a>
+						</footer>
+					</div>
+					<div class="about-box col-4">
+						<header>
+							<h3 style="text-align: center;">Exploratory Data Analysis</h3>
+							<h4>We utilized time-series cross-correlation to obtain insights from our <a href="https://docs.google.com/spreadsheets/d/1rBqIcvlR24GaPRls6MEQ8wJtsadiVIxgc5bVuSwaH-I/edit?usp=sharing" target="_blank">data</a>.</h4>
+							<p>We utilized the time-series cross-correlation data analysis technique <a href="https://www.kaggle.com/code/dedecu/cross-correlation-time-lag-with-pandas" target="_blank">from Kaggle by André Araújo</a> to analyze the correlations between various economic indicators as provided by World Bank and amount of political violence incidents recorded by ACLED.</p>
+						</header>
+						<p>Further details regarding our Exploratory Data Analysis methodology will be discussed in the dedicated Exploratory Data Analysis section of the website. For the meantime, we used Google Colab to perform the rest of the methodology phases.
+						</p>
+						<footer>
+							<a href="https://colab.research.google.com/drive/1A6t3qL0R7dj0_yRY4sdpKQr91h_Iz6QW?usp=sharing" target="_blank">View our Google Colab</a>
+						</footer>
+					</div>
+					<div class="about-box col-4">
+						<header>
+							<h3 style="text-align: center;">Machine Learning Application</h3>
+							<h4>We utilized Machine Learning to predict the amount of political violence indicators.</h4>
+							<p>The use of the Random Forest Regression machine learning algorithm helps us in identifying the features of the dataset that are important in predicting the amount of political violence incidents given the values from economic factors and previous readings of amount of political violence incidents.</p>
+						</header>
+						<p>Further details regarding our Machine Learning Application methodology will be discussed in the dedicated Machine Learning Application section of the website. For the meantime, we also used Google Colab to perform the rest of the methodology phases.
+						</p>
+						<footer>
+							<a href="https://colab.research.google.com/drive/1A6t3qL0R7dj0_yRY4sdpKQr91h_Iz6QW?usp=sharing" target="_blank">View our Google Colab</a>
+						</footer>
+					</div>
+				</div>
 			</div>
 		</section> <!-- End Methods Section -->
 
-		<!-- Results -->
+
+		<!-- Plots -->
+		<section id="plots">
+			<div class="container">
+				<div class="section-header">
+					<h3 class="section-title">Plots</h3>
+					<p class="section-description">Exploratory Data Analysis</p>
+				</div>
+		
+				<div class="row">
+					<div class="col-12 d-flex justify-content-center">
+							<ul id="plots-flters">
+							<li data-filter="*" class="filter-active">All</li>
+							<li data-filter=".filter-nutshell">Nutshell Plot</li>
+							<li data-filter=".filter-max">Plots With Highest Positive and Negative Correlations</li>
+							<li data-filter=".filter-corr">Correlation Matrices</li>
+							</ul>
+					</div>
+				</div>
+		
+				<div class="row plots-container">
+		
+					<div class="col-12 plots-item filter-nutshell">
+						<img src="assets\img\plots\Nutshell.png" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Nutshell</h4>
+							<p>This graph represents the relationship between the reported political violence incidents and the Consumer Price Index (CPI) economic factor. It is shown in the graph that as the CPI trend increases, the number of reported political violence incidents decreases, which shows that there is an inverse relationship between the two variables.</p>
+							<a href="assets\img\plots\Nutshell.png" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+		
+					<div class="col-6 plots-item filter-max">
+						<img src="assets/img/plots/Normalized%20CPI%20Price,%20nominal,%20seas.%20adj.%20from%20past%2011%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%203%20months%20vs.%20time%20line%20graph.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Normalized time series graph between Normalized CPI Price, nominal, seas. adj. and Amount of Political Violence Incidents</h4>
+							<p>The normalized time series plot between CPI price and number of recorded political violence indicents with time-lag. This graph shows the correlation of the economic factor with highest negative correlation to the number of recorded political violence indicents.</p>
+							<a href="assets/img/plots/Normalized%20CPI%20Price,%20nominal,%20seas.%20adj.%20from%20past%2011%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%203%20months%20vs.%20time%20line%20graph.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-max">
+						<img src="assets/img/plots/Normalized%20Terms%20of%20Trade%20from%20past%202%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%205%20months%20vs.%20time%20line%20graph.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Normalized time series graph between Terms of Trade and Amount of Political Violence Incidents</h4>
+							<p>The normalized time series plot between terms of trade and number of recorded political violence indicents with time-lag. This graph shows the correlation of the economic factor with highest negative correlation to the number of recorded political violence indicents.</p>
+							<a href="assets/img/plots/Normalized%20Terms%20of%20Trade%20from%20past%202%20months%20and%20Amount%20of%20Political%20Violence%20Incidents%20from%20past%205%20months%20vs.%20time%20line%20graph.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/CPI%20Price,%20nominal,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>CPI Price, nominal, seas. adj. time-lag cross-correlation matrix</h4>
+							<p>The correlation between CPI price and time-lag.</p>
+							<a href="assets/img/plots/CPI%20Price,%20nominal,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Official%20exchange%20rate,%20LCU%20per%20USD,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Official exchange rate, LCU per USD, period average time-lag cross-correlation matrix</h4>
+							<p>The correlation between official exchange rate and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Official%20exchange%20rate,%20LCU%20per%20USD,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Exports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Exports Merchandise, Customs, Price, US$, seas. adj. time-lag cross-correlation matrix</h4>
+							<p>The correlation between exports merchandise and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Exports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+		
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Exchange%20rate,%20new%20LCU%20per%20USD%20extended%20backward,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Exchange rate, new LCU per USD extended backward, period average time-lag cross-correlation matrix</h4>
+							<p>The correlation between exchange rate and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Exchange%20rate,%20new%20LCU%20per%20USD%20extended%20backward,%20period%20average%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Foreign%20Reserves,%20Months%20Import%20Cover,%20Goods%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Foreign Reserves, Months Import Cover, Goods time-lag cross-correlation matrix</h4>
+							<p>The correlation between foreign reserves and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Foreign%20Reserves,%20Months%20Import%20Cover,%20Goods%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+		
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/GDP%20at%20market%20prices,%20current%20LCU,%20millions,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>GDP at market prices, current LCU, millions, seas. adj. time-lag cross-correlation matrix</h4>
+							<p>The correlation between GDP at market prices and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/GDP%20at%20market%20prices,%20current%20LCU,%20millions,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+		
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Imports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Imports Merchandise, Customs, Price, US$, seas. adj. time-lag cross-correlation matrix</h4>
+							<p>The correlation between imports merchandise and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Imports%20Merchandise,%20Customs,%20Price,%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+		
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Industrial%20Production,%20constant%202010%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Industrial Production, constant 2010 US$, seas. adj. time-lag cross-correlation matrix</h4>
+							<p>The correlation between industrial production and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Industrial%20Production,%20constant%202010%20US$,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+		
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Nominal%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Nominal Effective Exchange Rate time-lag cross-correlation matrix</h4>
+							<p>The correlation between nominal effective exchange rate and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Nominal%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+					
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Real%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Real Effective Exchange Rate time-lag cross-correlation matrix</h4>
+							<p>The correlation between real effective exchange rate and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Real%20Effective%20Exchange%20Rate%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Stock%20Markets,%20LCU%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Stock Markets, LCU time-lag cross-correlation matrix</h4>
+							<p>The correlation between stock markets and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Stock%20Markets,%20LCU%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Terms%20of%20Trade%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Terms of Trade time-lag cross-correlation matrix</h4>
+							<p>The correlation between terms of trade and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Terms%20of%20Trade%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Total%20Reserves%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Total Reserves time-lag cross-correlation matrix</h4>
+							<p>The correlation between total reserves and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Total%20Reserves%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+					<div class="col-6 plots-item filter-corr">
+						<img src="assets/img/plots/Unemployment%20Rate,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" class="img-fluid" >
+						<div class="plots-info">
+							<h4>Unemployment Rate, seas. adj. time-lag cross-correlation matrix</h4>
+							<p>The correlation between unemployment rate and number of recorded political violence indicents with time-lag.</p>
+							<a href="assets/img/plots/Unemployment%20Rate,%20seas.%20adj.%20time-lag%20cross-correlation%20matrix.svg" data-gallery="plotsGallery" class="plots-lightbox"></a>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section><!-- End Plots Section -->
+
 		<section id="results">
 			<div class="container">
 				<header>
@@ -379,7 +404,7 @@
 					</p>
 				</header>
 			</div>
-		</section> <!-- End Results Section -->
+		</section>
 		
 		<!-- DataBAEs -->
 		<section id="team">
@@ -396,9 +421,7 @@
 								<div class="member-content">
 								<span>
 									<p>
-										Brylle is a 4th year BS Computer Science student at the University of the Philippines Diliman, specializing in Algorithms
-                                        and Complexity at the Department of Computer Science. Passionate about AI/ML, he's an active member of the UP Center for Student
-                                        Innovations and leads the content development for our project's website. Beyond coding, Brylle enjoys chess, anime, and reading manhwas.
+										Brylle is a 4th year BS Computer Science student at the University of the Philippines Diliman, specializing in Algorithms and Complexity at the Department of Computer Science. Passionate about AI/ML, he's an active member of the UP Center for Student Innovations and leads the content development for our project's website. Beyond coding, Brylle enjoys chess, anime, and reading manhwas.
 									</p>
 								</span>
 								<div class="social">
@@ -418,10 +441,7 @@
 								<div class="member-content">
 								<span>
 									<p>
-										Aaron is a 4th year BS Computer Science major in the University of the Philippines Diliman.
-										He is a member of the UP Center for Student Innovations Organization and is currently perforing his thesis
-										under the Department of Computer Science - Alogrithms and Complexity Laboratory.
-										While the whole team works toegther for this project in every aspect, Aaron is mainly responsible for the data handling.
+										Aaron is a 4th year BS Computer Science major in the University of the Philippines Diliman. He is the Vice President for Service of the UP Center for Student Innovations Organization and is currently perforing his thesis under the Department of Computer Science - Algorithms and Complexity Laboratory. While the whole team works toegther for this project in every aspect, Aaron is mainly responsible for the data handling. Beyond coding, Aaron enjoys playing competitive online games, engaging in sports and physical recreational activities, watching anime, and reading manga.
 									</p>
 								</span>
 								<div class="social">
@@ -441,10 +461,7 @@
 								<div class="member-content">
 								<span>
 									<p>
-										Earl is a 4th year BS Computer Science major in the University of the Philippines Diliman.
-										He is a member of the UP Beta Epsilon Fraternity and is currently perforing his thesis
-										under the Department of Computer Science - Alogrithms and Complexity Laboratory.
-										While the whole team works toegther for this project in every aspect, Earl is mainly responsible for the website development.
+										Earl is a 4th year BS Computer Science major in the University of the Philippines Diliman. He is a member of the UP Beta Epsilon Fraternity and is currently perforing his thesis under the Department of Computer Science - Algorithms and Complexity Laboratory. While the whole team works toegther for this project in every aspect, Earl is mainly responsible for the website development.
 									</p>
 								</span>
 								<div class="social">
@@ -465,7 +482,7 @@
 		<footer id="footer">
 			<div class="container">
 				<div class="credits">
-					CS 199 Project: <strong>Political Violence and Economic Indicators</strong> 
+					CS 132 Project: <strong>Political Violence and Economic Indicators</strong> 
 				</div>
 				<div class="copyright">
 					&copy; Created by <a href="#team">DataBAEs</a>. All rights reserved. 

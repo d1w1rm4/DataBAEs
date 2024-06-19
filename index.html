@@ -723,7 +723,8 @@
                         and an R-squared of 0.70. MSE quantifies the average squared difference between predicted and actual values, providing a clear measure
                         of prediction accuracy. Meanwhile, R-squared indicates how well the model fits the data, with higher values signifying a better fit. 
                         The optimal parameters identified for the Random Forest model were: 'bootstrap': False, 'max_depth': 10, 'max_features': 'sqrt', 
-                        'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50.
+                        'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50. Furthermore, it revealed that the most important features include
+                        CPI Price, Stock Markets, GDP at market prices, and Real Effective Exchange Rate.
 					</p>
                     <p>
                         A Random Forest Regressor functions by constructing multiple decision trees, each trained on different subsets of the data and features.
@@ -735,6 +736,10 @@
                         To evaluate our model's effectiveness, we divided the dataset into training (80%) and test (20%) sets. With the trained Random Forest model,
                         we successfully predicted the incidence of political violence incidents based on economic factors. The accompanying plot illustrates the model's
                         performance against the test set, demonstrating its predictive capability.
+                    </p>
+                    <h2>Limitations</h2>
+                    <p> A more robust hyperparameter tuning is recommended in the hope of achieving better models. Moreover, the researchers believe that better models
+                        will surely arise from larger datasets of higher quality.
                     </p>
 				</header>
 				<img src="assets/img/ML-plot.jpg">
